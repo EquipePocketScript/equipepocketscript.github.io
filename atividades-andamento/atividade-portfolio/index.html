@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Pessoal</title>
+    <script src="trocaFoto.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
     .left-column {
@@ -17,52 +19,63 @@
     }
     img {
         border-radius: 50%;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
+        background-size: cover;
     }
 </style>
 <body>
 
     <div>
-        <nav>Barra de Navegação</nav>
+        <ul class="navbar">
+            <li class="logotype"><a href="">Logo</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Fofocas Pop</a></li>
+            <li><a href="">Entretenimento</a></li>
+            <li><a href="">Nossa equipe</a></li>
+        </ul>
     </div>
 
     <div>
 
         <!-- div para o Carrossel -->
-        <ol>
-            <li>Home</li>
-            <li></li>
-            <li></li>
-            <li>Nossa equipe</li>
-        </ol>
 
         <!-- campo para foto do dev e texto de apresentação -->
         <div>
             <!-- campo para a foto -->
             <div class="left-column">
-                <img src="teste2.jfif" alt="imaegm para teste">
+                <img id="imagem" src="minhaFoto.jpeg" alt="imagem para teste" onclick="img01();">
             </div>
 
             <!-- campo para o texto de apresentação -->
             <div class="right-column">
-                <h1>Olá, eu sou a Torre Eiffel</h1>
-                <h3>sou uma torre localizada em Paris, França</h3>
+                <h1>Olá, eu sou o Vitor Gabriel!</h1>
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus vitae nostrum voluptas, mollitia vel non dicta, iste, omnis ipsum reiciendis quibusdam deleniti voluptate necessitatibus beatae facilis dolorem labore consequatur iusto!</h2>
             </div>
         </div>
 
-        <!-- campo para colocar os trabalhos do dev -->
-        <div>Trabalhos</div>
-
-        <!-- campo para colocar os contatos -->
+<!--         
+        <div>
+            <h1>Trabalhos</h1>
+            <ul>
+                <li>Trabalho 1</li>
+                <li>Trabalho 2</li>
+                <li>Trabalho 3</li>
+            </ul>
+        </div>
+        
         <div>
             Contate-me:
-            <!-- pensar no elemento para os contatos: lista ou div?? -->
+            <ul>
+                <li><a href="">Email</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">GitHub</a></li>
+                <li><a href="">?????</a></li>
+            </ul>
         </div>
 
-        <!-- campo para construir as setas -->
         <div>Setas</div>
     </div>
-
+ -->
 </body>
 </html>
