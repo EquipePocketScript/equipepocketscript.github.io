@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 2px solid purple;
+    border-radius: 10px;
+    margin: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+legend {
+    border: none;
+    margin: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: large;
+    
+}
+
+body {
+    background-color: colo;
+}
