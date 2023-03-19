@@ -6,38 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa sobre Cultura Pop</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap" rel="stylesheet">    
 </head>
 <body>
 
     <div>
         <h1>Formulário de Pesquisa sobre Cultura Pop</h1>
-        <p>Por favor, preencha o formulárioa seguir para realizarmos a pesquisa.</p>
+        <p>Por favor, preencha o formulário a seguir para realizarmos a pesquisa.</p>
     </div>
 
     <form>
         <div>
             <fieldset>
-                <legend>Dados Pessoais</legend>
-                <strong>Nome:</strong><br>
-                <input type="text" placeholder="Digite seu nome aqui...">
-                <label></label><br><br>
+                <legend><ion-icon name="person-outline"></ion-icon>Dados Pessoais</legend>
+                <div class="caixa">
+                    <input type="text" required>
+                    <label for="">Nome:</label>
+                </div>
 
                 <strong>Idade:</strong><br>
-                <input type="number" placeholder="Digite sua idade aqui...">
+                <input type="number" placeholder="Digite sua idade aqui..." class="caixa">
                 <label></label><br><br>
 
                 <strong>Email:</strong><br>
-                <input type="email" placeholder="Digite seu email aqui...">
+                <input type="email" placeholder="Digite seu email aqui..." class="caixa">
                 <label></label><br>
             </fieldset>
 
             <fieldset>
-                <legend>Tipos de Consumo</legend>
+                <legend><ion-icon name="receipt-outline"></ion-icon>Tipos de Consumo</legend>
                 <strong>Quais dessas opções abaixo você utiliza?</strong><br>
                 <input type="checkbox" value="ler">Ler livros/mangás/fanfics
                 <label></label><br>
@@ -50,124 +46,102 @@
 
         <div>
             <fieldset>
-                <legend>Filmes</legend>
-                <strong>Qual desses gêneros você mais consome em filmes e séries?</strong><br>
-                <input type="radio">Ficção Científica
-                <label></label><br>
-                <input type="radio">Romance
-                <label></label><br>
-                <input type="radio">Ação
-                <label></label><br>
-                <input type="radio">Terror/Suspense
-                <label></label><br>
-                <input type="radio">Fantasia
-                <label></label><br>
-                <input type="radio">Drama
-                <label></label><br>
-                <input type="radio">Comédia
-                <label></label><br>
-                <input type="radio">Outro...
-                <label></label><br>
+                <legend><ion-icon name="film-outline"></ion-icon>Filmes</legend>
+                <label>Qual desses gêneros você mais consome em filmes e séries?</label>
+                <select>
+                    <option selected>Selecione o gênero aqui</option>
+                    <option>Ficção Científica</option>
+                    <option>Romance</option>
+                    <option>Ação</option>
+                    <option>Terror/Suspense</option>
+                    <option>Fantasia</option>
+                    <option>Drama</option>
+                    <option>Comédia</option>
+                    <option>Outro...</option>
+                </select>
 
-                <strong>Qual dos filmes indicados ao Oscar 2023 você mais gostou?</strong><br>
-                <input type="radio">Nada de Novo no Front (Netflix)
-                <label></label><br>
-                <input type="radio">Avatar: O Caminho da Água
-                <label></label><br>
-                <input type="radio">Os Banshees de Inisherin
-                <label></label><br>
-                <input type="radio">Elvis (HBO Max)
-                <label></label><br>
-                <input type="radio">Tudo em Todo o Lugar ao Mesmo Tempo (Amazon Prime)
-                <label></label><br>
-                <input type="radio">Os Fabelmans
-                <label></label><br>
-                <input type="radio">Tár
-                <label></label><br>
-                <input type="radio">Top Gun: Maverick
-                <label></label><br>
-                <input type="radio">Triângulo da Tristeza
-                <label></label><br>
-                <input type="radio">Entre Mulheres
-                <label></label><br>
-                <input type="radio">Nenhum dos citados acima
-                <label></label><br>
+                <label>Qual dos filmes indicados ao Oscar 2023 você mais gostou?</label><br>
+                <select>
+                    <option selected>Selecione o filme aqui</option>
+                    <option>Nada de Novo no Front (Netflix)</option>
+                    <option>Avatar: O Caminho da Água</option>
+                    <option>Os Banshees de Inisherin</option>
+                    <option>Elvis (HBO Max)</option>
+                    <option>Tudo em Todo o Lugar ao Mesmo Tempo (Amazon Prime)</option>
+                    <option>Os Fabelmans</option>
+                    <option>Tár</option>
+                    <option>Top Gun: Maverick</option>
+                    <option>Triângulo da Tristeza</option>
+                    <option>Entre Mulheres</option>
+                    <option>Não assistiu nenhuma das opções listadas</option>
+
+                </select>
             </fieldset>
         </div>
 
         <div>
             <fieldset>
-                <legend>Música</legend>
-                <strong>Qual o seu gênero musical favorito/mais consome?</strong><br>
-                <input type="radio">Pop
-                <label></label><br>
-                <input type="radio">Funk
-                <label></label><br>
-                <input type="radio">MPB
-                <label></label><br>
-                <input type="radio">K-POP
-                <label></label><br>
-                <input type="radio">Reggaeton
-                <label></label><br>
-                <input type="radio">Gospel
-                <label></label><br>
-                <input type="radio">R&B
-                <label></label><br>
-                <input type="radio">Sertanejo
-                <label></label><br>
-                <input type="radio">Rap/Hip-Hop
-                <label></label><br>
-                <input type="radio">Rock
-                <label></label><br>
-                <input type="radio">Outro...
-                <label></label><br><br>
+                <legend><ion-icon name="musical-notes-outline"></ion-icon>Música</legend>
+                <label>Qual o seu gênero musical favorito/mais consome?</label>
+                <select>
+                    <option selected>Selecione o gênero aqui</option>
+                    <option>Pop</option>
+                    <option>Funk</option>
+                    <option>MPB</option>
+                    <option>K-POP</option>
+                    <option>Reggaeton</option>
+                    <option>Gospel</option>
+                    <option>R&B</option>
+                    <option>Sertanejo</option>
+                    <option>Rap/Hip-Hop</option>
+                    <option>Rock</option>
+                    <option>Outro...</option>
+                </select>
 
-                <strong>Qual música você mais ouviu em 2022?</strong><br>
-                <input type="text">
-                <label></label><br><br>
+                <div class="caixa">
+                    <input type="text" required>
+                    <label>Qual música você mais ouviu em 2022?</label>    
+                </div>
 
-                <strong>Qual seu artista/banda/grupo favorito?</strong><br>
-                <input type="text">
-                <label></label><br>
+                <div class="caixa">
+                    <input type="text" required>
+                    <label>Qual seu artista/banda/grupo favorito?</label>
+                </div>
             </fieldset>
         </div>
 
         <div>
             <fieldset>
-                <legend>Livros/Mangás</legend>
-                <strong>Qual desses gêneros você mais consome em livros/mangás/fanfics?</strong><br>
-                <input type="radio">Ficção Científica
-                <label></label><br>
-                <input type="radio">Romance
-                <label></label><br>
-                <input type="radio">Ação
-                <label></label><br>
-                <input type="radio">Terror/Suspense
-                <label></label><br>
-                <input type="radio">Fantasia
-                <label></label><br>
-                <input type="radio">Drama
-                <label></label><br>
-                <input type="radio">Comédia
-                <label></label><br>
-                <input type="radio">Outro...
-                <label></label><br><br>
+                <legend><ion-icon name="book-outline"></ion-icon>Livros/Mangás</legend>
+                <label>Qual desses gêneros literários você prefere?</label>
+                <select>
+                    <option selected>Selecione o gênero aqui</option>
+                    <option>Ficção Científica</option>
+                    <option>Romance</option>
+                    <option>Ação</option>
+                    <option>Terror/Suspense</option>
+                    <option>Fantasia</option>
+                    <option>Drama</option>
+                    <option>Comédia</option>
+                    <option>Outro...</option>
+                </select>
 
-                <strong>Qual o seu livro/mangá/fanfic favorito?</strong><br>
-                <input type="text">
-                <label></label><br>
-                <input type="text">
-                <label></label><br>
-                <input type="text">
-                <label></label><br><br>
+                <div class="caixa">
+                    <input type="text" required>
+                    <label>Qual o seu livro/mangá/fanfic favorito?</label>
+                </div>
 
-                <strong>Qual seu autor favorito?</strong><br>
-                <input type="text">
-                <label></label><br>
+                <div class="caixa">
+                    <input type="text" required>
+                    <label>Qual seu autor favorito?</label>
+                </div>
             </fieldset>
         </div>
         <button type="submit">Enviar</button>
     </form>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
 </body>
 </html>

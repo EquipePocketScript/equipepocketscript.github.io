@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,8 @@
 }
 
 body {
-    background-image: url('background.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    color: black;
+    background-color: violet;
 }
 
 progress {
@@ -19,7 +18,7 @@ progress {
 
 fieldset {
     border: 2px solid purple;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 15px auto;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -28,14 +27,23 @@ fieldset {
     width: 700px;
     height: auto;
     background-image: linear-gradient(to bottom right, #9370DB, white);
+    background: transparent;
+	/* backdrop-filter: blur(15px); */
 }
 
 legend {
     border: 2px solid purple;
+    border-radius: 50px;
     background-color: #9370DB;
     margin: 3px;
     padding: 5px 10px;
     font-size: large;
+}
+
+legend ion-icon {
+    position: relative;
+    right: 2.5px;
+    top: 1.5px;
 }
 
 h1, p {
@@ -57,7 +65,50 @@ button {
     font-size: 25px;
 }
 
-body {
-    color: black;
-    background-color: whitesmoke;
+
+
+.caixa {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.caixa label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label, input:valid ~ label {
+    top: -10px;
+}
+
+.caixa input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.caixa::placeholder {
+    color: lightgray;
+}
+
+select {
+    background-color: blueviolet;
+    border: 2px solid indigo;
+    border-radius: 10px;
+    width: 250px;
+    height: 2.5em;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 1em;
 }
