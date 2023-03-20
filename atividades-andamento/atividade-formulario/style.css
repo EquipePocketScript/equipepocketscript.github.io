@@ -8,17 +8,12 @@
 
 body {
     color: black;
-    background-color: violet;
+    background-image: linear-gradient(to bottom right, purple, pink);
 }
-
-progress {
-    width: 300px;
-    display: table;
- }
 
 fieldset {
     border: 2px solid purple;
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 15px auto;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -26,9 +21,8 @@ fieldset {
     box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
     width: 700px;
     height: auto;
-    background-image: linear-gradient(to bottom right, #9370DB, white);
     background: transparent;
-	/* backdrop-filter: blur(15px); */
+	backdrop-filter: blur(15px);
 }
 
 legend {
@@ -52,17 +46,17 @@ h1, p {
 }
 
 .bt {
-    width: 500px;
+    width: 250px;
     height: 50px;
     margin: 0 auto;
 }
 
 button {
-    width: 500px;
+    width: 250px;
     height: 50px;
     border-radius: 50px;
-    background-image: linear-gradient(to bottom right, #9370DB, white);
-    font-size: 25px;
+    background-color: darkmagenta;
+    font-size: 1.5em;
 }
 
 
@@ -85,7 +79,7 @@ button {
 }
 
 input:focus ~ label, input:valid ~ label {
-    top: -10px;
+    top: -5px;
 }
 
 .caixa input {
@@ -102,13 +96,27 @@ input:focus ~ label, input:valid ~ label {
     color: lightgray;
 }
 
-select {
+.caixa-select {
+    position: relative;
+}
+
+.caixa-select label {
+    font-size: 1em;
+    pointer-events: none;
+}
+
+.caixa-select select {
     background-color: blueviolet;
     border: 2px solid indigo;
-    border-radius: 10px;
+    border-radius: 7px;
     width: 250px;
     height: 2.5em;
     padding: 5px;
-    margin: 5px 0;
+    margin: 7px 0;
     font-size: 1em;
+}
+
+select:hover {
+    background-color: #9370DB;
+    border: 2px solid palevioletred;
 }
