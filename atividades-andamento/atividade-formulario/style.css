@@ -8,7 +8,10 @@
 
 body {
     color: black;
-    background-image: linear-gradient(to bottom right, purple, pink);
+    background-image: url("fundo.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 fieldset {
@@ -55,8 +58,14 @@ button {
     width: 250px;
     height: 50px;
     border-radius: 50px;
+    border: 3px solid indigo;
     background-color: darkmagenta;
     font-size: 1.5em;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    opacity: 0.6;
 }
 
 
