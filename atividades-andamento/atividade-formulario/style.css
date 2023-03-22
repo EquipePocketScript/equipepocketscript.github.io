@@ -7,11 +7,7 @@
 }
 
 body {
-    color: black;
-    background-image: url("fundo.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(64, 0, 255));
 }
 
 fieldset {
@@ -21,7 +17,7 @@ fieldset {
     padding-left: 15px;
     padding-bottom: 15px;
     padding-top: 5px;
-    box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
+    /* box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255); */
     width: 700px;
     height: auto;
     background: transparent;
@@ -52,20 +48,23 @@ h1, p {
     width: 250px;
     height: 50px;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 button {
     width: 250px;
     height: 50px;
-    border-radius: 50px;
-    border: 3px solid indigo;
-    background-color: darkmagenta;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(0, 0, 255);
     font-size: 1.5em;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 button:hover {
     opacity: 0.6;
+    
 }
 
 .caixa-formulario {
