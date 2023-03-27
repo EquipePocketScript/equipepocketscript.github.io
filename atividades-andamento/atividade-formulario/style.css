@@ -127,3 +127,18 @@ select:hover {
     background-color: #9370DB;
     border: 2px solid palevioletred;
 }
+
+.caixao {
+    display: flex;
+}
+
+.caixote {
+
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.caixote, checkbox {
+    text-align: center;
+}
