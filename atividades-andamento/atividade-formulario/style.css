@@ -67,11 +67,6 @@ button:hover {
     
 }
 
-.caixa-formulario {
-    justify-content: center;
-    align-items: center;
-}
-
 .caixa {
     position: relative;
     margin: 30px 0;
@@ -101,10 +96,6 @@ input:focus ~ label, input:valid ~ label {
     font-size: 1em;
     padding: 0 35px 0 5px;
     color: #fff;
-}
-
-.caixa::placeholder {
-    color: lightgray;
 }
 
 .caixa-select {
