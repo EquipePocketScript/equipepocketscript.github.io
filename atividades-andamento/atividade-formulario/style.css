@@ -7,27 +7,26 @@
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(64, 0, 255));
+    background-image: linear-gradient(to right, rgb(64, 0, 159), rgb(0, 0, 0));
 }
 
 fieldset {
-    border: 2px solid purple;
+    border: 2px solid rgb(175, 31, 191);
     border-radius: 15px;
     margin: 15px auto;
     padding-left: 15px;
     padding-bottom: 15px;
     padding-top: 5px;
-    /* box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255); */
+    box-shadow: 0 4px 8px 0 rgb(212, 51, 230), 0 6px 20px 0 rgb(212, 51, 230);
     width: 700px;
     height: auto;
     background: transparent;
-	backdrop-filter: blur(15px);
 }
 
 legend {
-    border: 2px solid purple;
+    border: 2px solid rgb(175, 31, 191);
     border-radius: 50px;
-    background-color: #9370DB;
+    background-color: rgb(147, 64, 230);
     margin: 3px;
     padding: 5px 10px;
     font-size: large;
@@ -56,7 +55,7 @@ button {
     height: 50px;
     border-radius: 25px;
     border: none;
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(92, 51, 255);
     font-size: 1.5em;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -64,6 +63,7 @@ button {
 
 button:hover {
     opacity: 0.6;
+    box-shadow: 0 4px 8px 0 rgb(92, 51, 255);
     
 }
 
