@@ -1,8 +1,3 @@
-function trocaFoto () {
-    if(document.getElementById("imagem").src == "minhaFoto.jpeg") {
-        document.getElementById("imagem").src("meuGIF.gif");
-    }
-    else {
-        document.getElementById("imagem").src("minhaFoto.jpeg");
-    }
+function img01 () {
+    document.getElementById("imagem").src="meuGIF.gif"
 }
