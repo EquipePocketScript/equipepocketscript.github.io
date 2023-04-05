@@ -1,0 +1,16 @@
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    margin: 10px;
+    padding: 20px;
+}
+
+.flex-container > .informar {
+    align-self: center;
+}
+
+.flex-container:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
