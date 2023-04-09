@@ -7,17 +7,17 @@
 .conteiner{
     width: 100%;
     min-width: 100vh;
-    background-color: rgb(193, 161, 223);
+    background-image: linear-gradient(rgba(206, 151, 243, 0.65),rgba(126, 43, 194, 0.65)), url(images/background.png);
     background-size: cover;
     background-position: center;
-    padding: 10px, 8%;
+    padding: 20px, 8%;
 }
 nav{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 10px 5%;
 }
 
 .logo{
@@ -40,3 +40,57 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
 }
+
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: #9b509b;
+    color:#fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn image{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.content{
+    margin-top: 5%;
+    color: #fff;
+    max-width: 1500px;
+    margin-bottom: 15%;
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 90px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.content form{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 200px;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+.content form input{
+    border: 0;
+    outline: 0;
+    width: 50%;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.content form .btn{
+    font-size: 15px;
+    padding: 5px 30px;
+}
+
