@@ -135,6 +135,14 @@ hr {
 .item1 button {
     display: inline-block;
     cursor: pointer;
+    background-color: violet;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+}
+
+.item1 button:hover {
+    background-color: blueviolet;
 }
 
 .item2 {
@@ -149,15 +157,15 @@ hr {
 }
 
 .item2 h1 {
-    font-size: 35px;
-}
-
-.item2 h2 {
     font-size: 30px;
 }
 
-.item2 p {
+.item2 h2 {
     font-size: 20px;
+}
+
+.item2 p {
+    font-size: 1vw;
 }
 
 .item3 {
