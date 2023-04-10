@@ -6,9 +6,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #CB6CE6;
+}
+
 .text-apresentation {
-    margin: 10px 0 0;
+    height: 60px;
     text-align: center;
+    color: #fff;
+}
+
+.text-apresentation > h1 {
+    justify-content: center;
+    padding: 5px 0;
 }
 
 .container {
@@ -16,6 +26,7 @@
     padding: 15px;
     max-width: 900px;
     margin: 0 auto;
+    
 }
 
 .gallery-wrapper {
@@ -38,7 +49,7 @@
     font-size: 30px;
     cursor: pointer;
     border: none;
-    background: linear-gradient(to left, transparent 0%, violet 200%);
+    background: linear-gradient(to left, transparent 0%, rgb(119, 1, 255) 200%);
     opacity: 0.1;
     transition: all 600ms ease-in-out;
     z-index: 1;
@@ -50,11 +61,15 @@
     left: auto;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right, transparent 0%, violet 200%);
+    background: linear-gradient(to right, transparent 0%, rgb(119, 1, 255) 200%);
 }
 
 .arrow-left:hover, .arrow-right:hover {
     opacity: 1;
+}
+
+.bi-chevron-left, .bi-chevron-right {
+    color: #0D1117;
 }
 
 .item {
@@ -69,25 +84,37 @@
     opacity: 1;
 }
 
+hr {
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border-radius: 50%;
+    border-color: indigo;
+}
+
 .grid-container {
     position: relative;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    background-color: #fff;
+    gap: 5px;
+    background-color: transparent;
     width: 800px;
-    border: 2px solid gray;
-    border-radius: 10px;
+    /* border: 2px solid gray; */
+    /* border-radius: 10px; */
   }
 
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     /* padding: 20px 0; */
     font-size: 30px;
 }
 
 .grid-item {
+    border-radius: 5px;
     text-align: center;
     align-content: center;
     align-items: center;
@@ -96,7 +123,8 @@
 .item1 {
     grid-column: 1;
     grid-row: 1;
-    margin: 20px;
+    padding: 20px;
+    background: indigo;
 }
 
 .item1 img {
@@ -112,12 +140,12 @@
 .item2 {
     grid-column: 2;
     grid-row: 1;
-    border-left: 2px solid grey;
+    background: #fff;
 }
 
 .item2 h1,h2,p {
     text-align: left;
-    margin: 20px 10px;
+    padding: 10px 10px;
 }
 
 .item2 h1 {
@@ -135,7 +163,7 @@
 .item3 {
     grid-column: 1 / span 2;
     grid-row: 2;
-    border-top: 2px solid grey;
+    background: #fff;
 }
 
 .item3 ul, li {
@@ -157,10 +185,10 @@
 }
 
 .flex-container > .informar {
-    align-self: center;
+    text-align: center;
 }
 
-.flex-container:nth-child(2n+1) {
+.flex-container:nth-child(2n) {
     flex-direction: row-reverse;
 }
 
