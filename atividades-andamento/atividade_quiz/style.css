@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+    
+}
+
+p#img{
+    text-align: center;
+    
+}
+
+p#dcs{
+    text-align: center;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 25px;
+    color: #210542;
+}
+header {
+    text-align: center;
+    background: #121212;
+    color: rgb(228, 7, 217) ;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    background-color: #edc4f5;
+    
+}
+
+section {
+    border: 2px solid #5624d0;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+p#msc{
+    text-align: center;
+    max-width: 700px;
+     background-color: #cabee9;
+     padding: 5px;
+   
+
+}
+
+label {
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #8f0778e0;
+}
+
+label:hover {
+    background: #cec0fc;
+}
+
+button{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+    background-color: #4c0a97;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background: #76d7c8;
+    color:#000;
+}
+
+h2{
+  text-align: center;
+}
+
+#resultado {
+    font: size 30px;
+    color:darked;
+}
