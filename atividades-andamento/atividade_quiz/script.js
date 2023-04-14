@@ -25,6 +25,13 @@ function corrigir(){
             }
     }
 
-    document.getElementById("resultado").innerHTML=quantidade_corretas;
+    if(quantidade_corretas == 0)
+    {
+        document.getElementById("resultado").innerHTML= "Infelizmente, seu resultado é " + quantidade_corretas + " :(";
+    }
+    else
+    {
+        document.getElementById("resultado").innerHTML= "Parabéns! Você acertou " + quantidade_corretas + "!";
+    }
 
 }
