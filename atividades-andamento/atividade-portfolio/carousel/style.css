@@ -194,10 +194,8 @@ hr {
     padding: 20px;
 }
 
-.flex-container > .informar {
+.flex-container > .informar h3 {
     text-align: left;
-    align-items: center;
-    justify-content: center;
 }
 
 .flex-container:nth-child(2n) {
@@ -206,10 +204,11 @@ hr {
 }
 
 .flex-container iframe {
-    width: 500px;
-    height: 250px;
+    width: 600px;
+    height: 300px;
     border: none;
     border-radius: 10px;
+    margin: auto;
 }
 
  /* Hide scrollbar for Chrome, Safari and Opera */
