@@ -2,12 +2,11 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(64, 0, 159), rgb(0, 0, 0));
+    background-color: #2A0B29;
 }
 
 fieldset {
@@ -17,10 +16,10 @@ fieldset {
     padding-left: 15px;
     padding-bottom: 15px;
     padding-top: 5px;
-    box-shadow: 0 4px 8px 0 rgb(212, 51, 230), 0 6px 20px 0 rgb(212, 51, 230);
+    box-shadow: 0 0 6px 4PX rgb(212, 51, 230);
     width: 700px;
     height: auto;
-    background: transparent;
+    background: #951C91;
 }
 
 legend {

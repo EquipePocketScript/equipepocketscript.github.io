@@ -1,14 +1,14 @@
 var fotoSabrina = "images/fotoSabrina.png";
-var picrewSabrina = "images/lua.png";
+var picrewSabrina = "images/picrewSabrina.gif";
 
 var fotoSuzana = "images/fotoSuzana.png";
-var picrewSuzana = "images/gato.jpg";
+var picrewSuzana = "images/picrewSuzana.gif";
 
 var fotoVitor = "images/fotoVitor.png";
-var picrewVitor = "images/android.jpg";
+var picrewVitor = "images/picrewVitor.gif";
 
 var fotoYuri = "images/fotoYuri.png";
-var picrewYuri = "images/mario.jpg";
+var picrewYuri = "images/picrewVitor.gif";
 
 function alternarSabrina () {
     document.getElementById("imagemSabrina").src = picrewSabrina;
