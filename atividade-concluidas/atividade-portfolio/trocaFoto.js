@@ -8,7 +8,7 @@ var fotoVitor = "images/fotoVitor.png";
 var picrewVitor = "images/picrewVitor.gif";
 
 var fotoYuri = "images/fotoYuri.png";
-var picrewYuri = "images/picrewVitor.gif";
+var picrewYuri = "images/picrewYuri.gif";
 
 function alternarSabrina () {
     document.getElementById("imagemSabrina").src = picrewSabrina;
