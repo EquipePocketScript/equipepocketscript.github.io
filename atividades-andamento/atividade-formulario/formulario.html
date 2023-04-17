@@ -4,212 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa sobre Cultura Pop</title>
     <link rel="stylesheet" href="style.css">
+    <title>PS - Formulário de Cadastro</title>
 </head>
 <body>
 
-    <div>
-        <h1>Formulário de Pesquisa sobre Cultura Pop</h1>
-        <p>Por favor, preencha o formulário a seguir para realizarmos a pesquisa.</p>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastro de Usuário</b></legend>
+                <div class="details">
+                    <p>Para se cadastrar no nosso site, por favor, preencha os campos abaixo com seus dados.</p>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" name="" id="" class="userInput" required>
+                    <label for="" class="labelInput">Nome</label>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" name="" id="" class="userInput" required>
+                    <label for="" class="labelInput">Sobrenome</label>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" name="" id="" class="userInput" required>
+                    <label for="" class="labelInput">Email</label>
+                </div>
+                <div class="inputContainer">
+                    <input type="password" name="" id="" class="userInput" required>
+                    <label for="" class="labelInput">Senha</label>
+                </div>
+                <div class="inputContainer">
+                    <label for="">Data de Nascimento</label>
+                    <input type="date" name="" id="" class="dataInput" required>
+                </div>
+                <div class="checkboxContainer">
+                    <label for="">Conteúdos que você consome:</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Livros</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Filmes</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Músicas</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Séries</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Animações</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Animes</label>
+                </div>
+                <div class="buttonContainer">
+                    <button type="submit">Concluído</button>
+                </div>
+            </fieldset>
+        </form>
     </div>
 
-    <form action="">
-        <fieldset>
-            <legend><ion-icon name="person-outline"></ion-icon>Dados Pessoais</legend>
-            <div class="caixa">
-                <input type="text" required>
-                <label for="">Nome:</label>
-            </div>
-
-            <div class="caixa">
-                <input type="number" min="1" max="120" required>
-                <label for="">Idade:</label>
-            </div>
-            
-
-            <div class="caixa-select">
-                <label for="">Gênero:</label><br>
-                <select name="" id="">
-                    <option selected value="">Selecione aqui o seu gênero</option>
-                    <option value="">Masculino</option>
-                    <option value="">Feminino</option>
-                    <option value="">Não-binário</option>
-                </select>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend><ion-icon name="receipt-outline"></ion-icon>Tipos de Consumo</legend>
-            <div class="consumo">
-                <input type="checkbox" value="livros">
-                <label for="">Livros</label><br>
-                <input type="checkbox" value="mangas">
-                <label for="">Mangás</label><br>
-                <input type="checkbox" value="filmes">
-                <label for="">Filmes</label><br>
-                <input type="checkbox" value="series">
-                <label for="">Séries</label><br>
-                <input type="checkbox" value="musica">
-                <label for="">Música</label><br>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend><ion-icon name="options-outline"></ion-icon>Plataformas de Streaming</legend>
-            <label>Qual destas plataformas de Streaming de Filmes/Séries/Animes você usa?</label>
-            <div class="caixao">
-                <div class="caixote">
-                    <input type="checkbox"> Netflix<br>
-                </div class="caixote">
-                <div class="caixote">
-                    <input type="checkbox"> Prime Video <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> HBO Max <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> GloboPlay <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> Disney+ <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> Paramount <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> Crunchroll <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> Funimation <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> Outro... <br> <br>
-                </div>
-            </div>
-    
-            <label>Qual destas plataformas de Streaming de música você usa?</label>
-            <div class="caixao">
-                <div class="caixote">
-                    <input type="checkbox"> Spotify <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> Amazon Music <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> YouTube Music <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> Deezer <br>
-                </div>
-                <div class="caixote">
-                    <input type="checkbox"> Outro... <br>
-                </div>
-    
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend><ion-icon name="film-outline"></ion-icon>Filmes</legend>
-            <div class="caixa-select">
-                <label for="">Qual desses gêneros você mais consome em filmes e séries?</label><br>
-                <select>
-                    <option selected name="" value="">Selecione o gênero aqui</option>
-                    <option name="" value="">Ficção Científica</option>
-                    <option name="" value="">Romance</option>
-                    <option name="" value="">Ação</option>
-                    <option name="" value="">Terror/Suspense</option>
-                    <option name="" value="">Fantasia</option>
-                    <option name="" value="">Drama</option>
-                    <option name="" value="">Comédia</option>
-                    <option name="" value="">Outro...</option>
-                </select>
-            </div>
-
-            <div class="caixa-select">
-                <label>Qual dos filmes indicados ao Oscar 2023 você mais gostou?</label><br>
-                <select>
-                    <option selected name="" value="">Selecione o filme aqui</option>
-                    <option name="" value="">Nada de Novo no Front (Netflix)</option>
-                    <option name="" value="">Avatar: O Caminho da Água</option>
-                    <option name="" value="">Os Banshees de Inisherin</option>
-                    <option name="" value="">Elvis (HBO Max)</option>
-                    <option name="" value="">Tudo em Todo o Lugar ao Mesmo Tempo (Amazon Prime)</option>
-                    <option name="" value="">Os Fabelmans</option>
-                    <option name="" value="">Tár</option>
-                    <option name="" value="">Top Gun: Maverick</option>
-                    <option name="" value="">Triângulo da Tristeza</option>
-                    <option name="" value="">Entre Mulheres</option>
-                    <option name="" value="">Não assistiu nenhuma das opções listadas</option>
-                </select>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend><ion-icon name="musical-notes-outline"></ion-icon>Música</legend>
-            <div class="caixa-select">
-                <label>Qual o seu gênero musical favorito/mais consome?</label><br>
-                <select>
-                    <option selected name="" value="">Selecione o gênero aqui</option>
-                    <option name="" value="">Pop</option>
-                    <option name="" value="">Funk</option>
-                    <option name="" value="">MPB</option>
-                    <option name="" value="">K-POP</option>
-                    <option name="" value="">Reggaeton</option>
-                    <option name="" value="">Gospel</option>
-                    <option name="" value="">R&B</option>
-                    <option name="" value="">Sertanejo</option>
-                    <option name="" value="">Rap/Hip-Hop</option>
-                    <option name="" value="">Rock</option>
-                    <option name="" value="">Outro...</option>
-                </select>
-            </div>
-
-            <div class="caixa">
-                <input type="text" required>
-                <label>Qual música você mais ouviu em 2022?</label>    
-            </div>
-
-            <div class="caixa">
-                <input type="text" required>
-                <label>Qual seu artista/banda/grupo favorito?</label>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend><ion-icon name="book-outline"></ion-icon>Livros/Mangás</legend>
-            <div class="caixa-select">
-                <label>Qual desses gêneros literários você prefere?</label><br>
-                <select>
-                    <option selected name="" value="">Selecione o gênero aqui</option>
-                    <option name="" value="">Ficção Científica</option>
-                    <option name="" value="">Romance</option>
-                    <option name="" value="">Ação</option>
-                    <option name="" value="">Terror/Suspense</option>
-                    <option name="" value="">Fantasia</option>
-                    <option name="" value="">Drama</option>
-                    <option name="" value="">Comédia</option>
-                    <option name="" value="">Outro...</option>
-                </select>
-            </div>
-
-            <div class="caixa">
-                <input type="text" required>
-                <label>Qual o seu livro/mangá/fanfic favorito?</label>
-            </div>
-
-            <div class="caixa">
-                <input type="text" required>
-                <label>Qual seu autor favorito?</label>
-            </div>
-        </fieldset>
-    </form>
-    <div class="bt">
-        <button type="submit">Enviar</button>
-    </div>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
 </body>
 </html>
