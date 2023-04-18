@@ -11,6 +11,9 @@ body {
     background: #f9f9f9;
     min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: scroll;
+    max-width: 1920px;
+    max-height: 1080px;
 }
 
 header { 
