@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste Botão</title>
+</head>
+<body>
+
+    <div id="theProject-list" class="project-list">
+        <a href="javascript:void(0)" class="button-close" onclick="closeList()"><i class="bi bi-x"></i></a>
+        <a href="">Homepage</a>
+        <a href="">Landingpage</a>
+        <a href="">Parallax</a>
+        <a href="">Quiz</a>
+        <a href="">Galeria de Fotografia</a>
+        <a href="">Formulário de Cadastro</a>
+        <a href="">Página de Login</a>
+        <a href="">Portfólio</a>
+    </div>
+
+    <div id="main">
+        <h2>Teste para a Lista</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, tempore facere. Molestiae sequi a suscipit commodi ipsa reprehenderit, natus delectus? Eos necessitatibus in earum assumenda autem culpa iusto sint minima!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, provident repellendus eveniet voluptatum facere quaerat sit voluptates omnis consectetur fugit adipisci, quisquam incidunt, quibusdam sunt eius dolorum quis quos consequuntur?</p>
+    </div>
+    
+    <!-- <div class="botao-container">
+        <p>Deseja voltar para a página anterior? <a href="">Clique aqui!</a></p>
+        <p>Deseja visitar uma página específica? <a href="">Veja nossa lista de sites aqui!</a></p>
+    </div>
+
+    <div class="botao">
+        <a href=""><i class="bi bi-arrow-left"></i></a>
+    </div>
+    -->
+
+    <div class="button-list">
+        <i class="bi bi-list" style="bottom: 0 !important;right: 0 !important;font-size: 30px;cursor: pointer;" onclick="openList()"></i>
+    </div>
+
+    <script>
+        function openList() {
+            document.getElementById("theProject-list").style.width = "250px";
+            document.getElementById("main").style.marginRight = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeList() {
+            document.getElementById("theProject-list").style.width = "0";
+            document.getElementById("main").style.marginRight = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+</body>
+</html>
