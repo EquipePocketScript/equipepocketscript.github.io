@@ -35,6 +35,8 @@
 
 .project-list a:hover {
     color: #F1F1F1;
+    font-size: 36px;
+    transition: 0.5 ease-in-out;
 }
 
 .project-list .button-close {
