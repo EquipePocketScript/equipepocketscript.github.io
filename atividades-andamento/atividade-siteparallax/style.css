@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,600&display=swap");
 
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body { 
@@ -14,6 +13,7 @@ body {
     overflow-y: scroll;
     max-width: 1920px;
     max-height: 1080px;
+    font-family: 'Poppins', sans-serif;
 }
 
 header { 
@@ -47,7 +47,7 @@ header a {
 }
 
 .navigation a:hover, .navigation a.active {
-    background: #ff00d4;
+    background: #b72eec;
     color: #fff;
 }
 
@@ -75,7 +75,7 @@ header a {
 }
 .sec{
     position: relative;
-    background: #a200ff;
+    background: #a223ec;
     padding: 100px;
 }
 
