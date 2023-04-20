@@ -63,6 +63,7 @@ nav ul li a{
 .button-content {
     position: relative;
     text-align: center;
+    margin-bottom: 30px;
 }
 .button-content button {
     font-size: 20px;
