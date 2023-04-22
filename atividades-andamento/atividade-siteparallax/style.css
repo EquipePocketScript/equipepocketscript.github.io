@@ -1,13 +1,27 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 15b35622832bd525916308a0ec2eb234dcb3290a
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body { 
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
+=======
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-width: 1920px;
+    max-height: 1080px;
+    font-family: 'Poppins', sans-serif;
+>>>>>>> 15b35622832bd525916308a0ec2eb234dcb3290a
 }
 
 header { 
@@ -20,6 +34,20 @@ header {
   z-index: 1;
 }
 
+<<<<<<< HEAD
+=======
+header a {
+    font-size: 20px;
+}
+
+.logo {
+    font-size: 2em; 
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+>>>>>>> 15b35622832bd525916308a0ec2eb234dcb3290a
 .navigation a{
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -30,7 +58,7 @@ header {
 }
 
 .navigation a:hover, .navigation a.active {
-    background: #ff00d4;
+    background: #b72eec;
     color: #fff;
 }
 
@@ -58,7 +86,7 @@ header {
 }
 .sec{
     position: relative;
-    background: #a200ff;
+    background: #a223ec;
     padding: 100px;
 }
 

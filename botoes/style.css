@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.5s;
+}
+
+.project-list {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    animation-name: lista;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.project-list a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #121212;
+    text-transform: uppercase;
+    display: block;
+    transition: 0.3s;
+}
+
+.project-list a:hover {
+    color: #F1F1F1;
+    font-size: 36px;
+    transition: 0.5 ease-in-out;
+}
+
+.project-list .button-close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-right 0.5s;
+    padding: 16px;
+}
+
+@keyframes lista {
+    0% {background-color: rgba(206, 151, 243, 0.65);}
+    50% {background-color: rgba(126, 43, 194, 0.65);}
+    100% {background-color: rgba(206, 151, 243, 0.65);}
+}
+
+.button-list {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+}
+
+.button-list .button {
+    background-color: indigo;
+    opacity: 0.3;
+    color: white;
+    font-size: 30px;
+    padding: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-list .button:hover {
+    opacity: 1;
+}
+
+.button-arrow {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 5px;
+}
+
+.button-arrow .arrow {
+    background-color: indigo;
+    opacity: 0.3;
+    color: white;
+    font-size: 30px;
+    padding: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-arrow .arrow:hover {
+    opacity: 1;
+}
