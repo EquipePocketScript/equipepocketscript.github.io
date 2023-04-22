@@ -33,7 +33,7 @@
     </div>
 
     <div class="button-arrow">
-        <button class="arrow"><i class="bi bi-arrow-left"></i></button>
+        <button class="arrow" onclick="back_toStart()"><i class="bi bi-arrow-left"></i></button>
     </div>
 
 
@@ -48,6 +48,11 @@
             document.getElementById("theProject-list").style.width = "0";
             document.getElementById("main").style.marginRight = "0";
             document.body.style.backgroundColor = "white";
+        }
+    </script>
+    <script>
+        function back_toStart() {
+            location.replace("../atividade-concluidas/atividade-portfolio/index.html")
         }
     </script>
 

@@ -242,7 +242,7 @@ hr {
 }
 
 .projeto a {
-    cursor: alias;
+    cursor: pointer;
 }
 
 .projeto-text {
