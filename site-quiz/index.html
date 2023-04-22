@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS QUIZ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>QUIZ GAME</h1>
+        <p>Jogo Musical!
+            &#x1F3AE;
+            &#x1F3B5;
+        </p>
+    </header>
+
+    <p id="img">
+        <img src="imagens/imagem2.jpg" alt="imagemjogo">
+    </p>
+
+    <p id="dcs">
+        'Responda este QUIZ e teste seus conhecimentos sobre as trilhas sonoras dos jogos mais famosos do mundo'
+    </p>    
+
+<div class="container">
+    <section id="p0">
+
+        <h3> 1*- Os desenvolvedores pretendiam fazer essa franquia com múltiplos protagonistas, porém, tiveram que abandonar a ideia por causa de limitações técnicas, já que os computadores e consoles da época não conseguiriam rodar tantos personagens principais. -  </h3>
+
+        <p id="msc"> <audio src="midia/musica001.mp3" controls autoplay > </audio></p>
+
+
+        <label><input type="radio" value="0" name="p0" onclick="resposta(0,this)"> Pokémon </label>
+
+        <label><input type="radio" value="2" name="p0" onclick="resposta(0,this)"> GTA - San Andreas </label>
+
+        <label><input type="radio" value="0" name="p0"onclick="resposta(0,this)"> The Witcher </label>
+
+    </section>
+
+    <section id="p1">
+
+        <h3>2* -  Essa franquia de jogos detém o recorde de mais vendida de todos os tempos! - </h3>
+        <p id="msc"><audio src="midia/musica002.mp3" controls autoplay></audio></p>
+
+        <label> <input type="radio" value="0" name="p1"onclick="resposta(1,this)"> Sonic </label > 
+
+        <label> <input type="radio" value="0" name="p1"onclick="resposta(1,this)"> Pac-Man </label>
+
+        <label> <input type="radio" value="3" name="p1"onclick="resposta(1,this)"> Super Mario Bros </label>
+
+    </section>
+
+    <section id="p2">
+
+        <h3>3* - Essa franquia ganhou, em 2020, o prêmio de "Game Of The Year". - </h3>
+        <p id="msc"><audio src="midia/musica003.mp3" controls autoplay></audio></p>
+
+        <label><input type="radio" value="0" name="p2"onclick="resposta(2,this)"> God Of War </label>
+
+        <label> <input type="radio" value="0" name="p2"onclick="resposta(2,this)"> Horizon Forbidden West </label>
+
+        <label> <input type="radio" value="3" name="p2"onclick="resposta(2,this)"> The Last Of Us </label>
+
+    </section>
+
+    <section id="p3">
+
+        <h3>4* - Existem quatro skins nessa franquia que fazem referências diretas à cultura brasileira. Um exemplo de uma delas é a skin Carnanivia, inspirada no Carnaval. - </h3>
+        <p id="msc"><audio src="midia/musica004.mp3" controls autoplay ></audio></p>
+
+        <label><input type="radio" value="1" name="p3"onclick="resposta(3,this)"> League Of Legends </label>
+
+        <label><input type="radio" value="0" name="p3"onclick="resposta(3,this)"> Fortnite </label>
+
+        <label> <input type="radio" value="0" name="p3"onclick="resposta(3,this)"> Free Fire </label>
+
+    </section>
+
+    <section id="p4">
+
+        <h3>5* - Além da inspiração em outras mídias, outra fonte de inspiração paras as capas da franquia eram castelos de verdade. Muitos castelos do mundo real serviram de modelo para clausura dos jogadores e ajudaram a moldar a mitologia da série. - 
+        </h3>
+        <p id="msc"><audio src="midia/musica005.mp3" controls autoplay></audio></p>
+        <label><input type="radio" value="0" name="p4"onclick="resposta(4,this)">The Incredible Adventures of Van Helsing</label>
+
+        <label><input type="radio" value="0" name="p4"onclick="resposta(4,this)">Diablo</label>
+
+        <label><input type="radio" value="3" name="p4"onclick="resposta(4,this)">Castlevania</label>
+
+    </section>
+
+    <section id="p5">
+
+        <h3>6* - A neblina, característica mais marcante da franquia, foi adicionada porque o mundo semi-aberto do jogo tinha cenários de textura fraca, em branco ou mal renderizados – por causa das limitações visuais da época e das reduções gráficas. A névoa serviu para encobrir os defeitos. - </h3>
+        <p id="msc"><audio src="midia/musica006.mp3" controls autoplay></audio></p>
+
+        <label> <input type="radio" value="1" name="p5"onclick="resposta(5,this)"> Silent Hill </label>
+
+        <label> <input type="radio" value="0" name="p5"onclick="resposta(5,this)"> Resident Evil </label>
+
+        <label> <input type="radio" value="0" name="p5"onclick="resposta(5,this)"> Slender Man </label>
+
+    </section>
+
+    <section id="p6">
+
+        <h3>7* - Esse jogo faz, em diversos momentos, referências a filmes dos famosos Studio Ghibli - </h3>
+        <p id="msc"><audio src="midia/musica007.mp3" controls autoplay></audio></p>
+
+        <label> <input type="radio" value="0" name="p6"onclick="resposta(6,this)"> Harvest Moon </label>
+
+        <label> <input type="radio" value="2" name="p6"onclick="resposta(6,this)"> Stardew Valley  </label>
+
+        <label> <input type="radio" value="0" name="p6"onclick="resposta(6,this)"> Animal Crossing </label>
+
+    </section>
+
+    <section id="p7">
+
+        <h3>8* - Essa franquia possui diferentes finais que são alcançados dependendo das escolhas do jogador. Dessa forma,o criador do jogo planejava inserir um final alternativo na qual a recopensa seria ver um dos personagens de biquini, porém, a ideia foi descartada - </h3>
+        <p id="msc"><audio src="midia/musica008.mp3" controls autoplay></audio></p>
+
+        <label> <input type="radio" value="1" name="p7"onclick="resposta(7,this)"> Undertale </label>
+
+        <label> <input type="radio" value="0" name="p7"onclick="resposta(7,this)"> Life is Strange </label>
+
+        <label> <input type="radio" value="0" name="p7"onclick="resposta(7,this)"> The Stanley Parable </label>
+
+    </section>
+
+    <section id="p8">
+
+        <h3>9* - É a 2 franquia mais vendida de todos os tempos e o único videogame  aparecer na capa da Revista Time. A matéria comentava sobre o quanto as crianças ficavam obcecadas com o game – não de uma forma positiva. Entretanto, pelo menos, foi uma grande exposição. - </h3>
+        <p id="msc"><audio src="midia/musica009.mp3" controls autoplay></audio></p>
+
+        <label> <input type="radio" value="0" name="p8"onclick="resposta(8,this)"> Digimon </label>
+
+        <label> <input type="radio" value="0" name="p8"onclick="resposta(8,this)"> Minecraft </label>
+
+        <label> <input type="radio" value="3" name="p8"onclick="resposta(8,this)"> Pokémon </label>
+
+    </section>
+
+
+    <section id="p9">
+
+        <h3>1o* - Foi eleito jogo do ano em 2017 e possui diferentes mensagens de "GAME OVER" dependendo da forma que o personagem morre - </h3>
+        <p id="msc"><audio src="midia/musica010.mp3" controls autoplay></audio></p>
+
+        <label> <input type="radio" value="1" name="p9"onclick="resposta(9,this)"> Zelda: Breath of the Wild </label>
+
+        <label> <input type="radio" value="0" name="p9"onclick="resposta(9,this)"> Elden Ring </label>
+
+        <label> <input type="radio" value="0" name="p9"onclick="resposta(9,this)"> God of War Ragnarok </label>
+
+    </section>
+
+    <br>
+    <button onclick="corrigir()">ENVIAR</button>
+    <h2><span id="resultado"></span></h2>
+
+</div>
+
+<div class="button-arrow">
+    <button class="arrow" onclick="back_toStart()"><i class="bi bi-arrow-left"></i></button>
+</div>
+
+<script src="script.js"></script>
+<script>
+    function back_toStart() {
+        location.replace("../site-portfolio/index.html")
+    }
+</script>
+
+
+
+</body>
+</html>
