@@ -1,0 +1,14 @@
+.titulo {
+    font-size: 2em; /* Define o tamanho da fonte do título */
+    font-weight: bold; /* Define a espessura da fonte */
+    text-align: center; /* Centraliza o título na página */
+  }
+  
+
+.conteudo {
+    width: 80%; /* Define a largura da div */
+    margin: 0 auto; /* Centraliza a div na página */
+    text-align: justify; /* Centraliza e organiza o texto */
+    padding: 20px; /* Adiciona um preenchimento interno */
+  }
+  
