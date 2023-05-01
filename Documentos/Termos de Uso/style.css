@@ -1,14 +1,28 @@
-.titulo {
-    font-size: 2em; /* Define o tamanho da fonte do título */
-    font-weight: bold; /* Define a espessura da fonte */
-    text-align: center; /* Centraliza o título na página */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
   }
   
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
 
-.conteudo {
-    width: 80%; /* Define a largura da div */
-    margin: 0 auto; /* Centraliza a div na página */
-    text-align: justify; /* Centraliza e organiza o texto */
-    padding: 20px; /* Adiciona um preenchimento interno */
+  p {
+    list-style-type: disc;
+    margin-left: 60px;
   }
-  
