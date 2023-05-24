@@ -1,6 +1,8 @@
 const grid = document.querySelector('.grid-container');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer')
+const interfaceWinner = document.querySelector('#interface');
+const headerContainer = document.querySelector('#header-container')
 
 const personagens = [
     'billie-eilish',
@@ -24,13 +26,25 @@ const createElement = (tag, className) => {
 let primeiraCard = '';
 let segundaCard = '';
 
+const apareceInterface = () => {
+
+	const frase1 = `Parabéns, ${spanPlayer.innerHTML}, você venceu! :D`;
+	const frase2 = `Seu tempo de jogo foi de ${timer.innerHTML}s.`;
+	interface.removeAttribute('hidden');
+    interface.setAttribute('class', 'winner-interface')
+	document.getElementById('name-player').innerHTML = frase1;
+	document.getElementById('timer-pointer').innerHTML = frase2;
+	grid.style.filter = "blur(5px)";
+	headerContainer.style.filter = "blur(5px)";
+}
+
 const checarEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
     if(disabledCards.length == (personagens.length)*2) {
         clearInterval(this.loop);
         setTimeout(() => {
-            alert('Parabéns! Você venceu :D !!!!!');
+            apareceInterface();
         }, 300);
     }
 }

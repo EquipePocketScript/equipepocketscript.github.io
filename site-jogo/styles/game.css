@@ -70,3 +70,68 @@ header {
     filter: saturate(0);
     opacity: 0.5;
 }
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.winner-interface {
+    width: auto;
+    height: auto;
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(0%, 0%);
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 7px;
+    font-size: 1em;
+    color: #0f0f0f;
+    transition: alls 500ms ease;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    box-shadow: 0 4px 8px 0 rgba(70, 0, 239, 0.4), 0 6px 20px 0 rgba(157, 28, 209, 0.29);
+}
+
+.buttons-area {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons {
+    padding: 5px;
+    border-radius: 5px;
+    filter: grayscale(20%);
+    color: rgba(255, 255, 255, 0.95)
+}
+
+.buttons:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.play-again {
+    background: rgba(70, 0, 239, 1);
+}
+
+.back-home {
+    background: rgba(157, 28, 209, 1);
+}
+
+#name-player {
+    color: rgba(70, 0, 239, 1);
+}
+
+#timer-pointer {
+    color: rgba(157, 28, 209, 1);
+}
