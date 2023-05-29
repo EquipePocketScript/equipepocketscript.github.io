@@ -101,18 +101,21 @@ header {
 }
 
 .buttons-area {
-    margin-top: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
 }
 
 .buttons {
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
+    width: 100%;
+    margin: 10px 0 1px 0;
     filter: grayscale(20%);
-    color: rgba(255, 255, 255, 0.95)
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1em;
 }
 
 .buttons:hover {

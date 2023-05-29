@@ -55,6 +55,8 @@ const checarCards = () => {
 
     if(primeiroPersonagem == segundoPersonagem) {
 
+        playAudio(primeiraCard);
+
         primeiraCard.firstChild.classList.add('disabled-card');
         segundaCard.firstChild.classList.add('disabled-card');
 
@@ -77,6 +79,11 @@ const checarCards = () => {
 
     }
 
+}
+
+const playAudio = (elemento) => {
+    const audio = elemento.querySelector('audio');
+    audio.play();
 }
 
 const revealCard = ( { target } ) => {
@@ -104,11 +111,17 @@ const createCard = (personagem) => {
     const card = createElement('div', 'card');
     const front = createElement('div', 'face front');
     const back = createElement('div', 'face back');
+    const audio = createElement('audio', `${personagem}`);
 
     front.style.backgroundImage = `url('../images/${personagem}.png')`;
 
+    audio.src = `../audios/${personagem}.mp3`;
+
+    audio.play();
+
     card.appendChild(front);
     card.appendChild(back);
+    card.appendChild(audio);
 
     card.addEventListener('click', revealCard);
     card.setAttribute('data-personagem', personagem);
