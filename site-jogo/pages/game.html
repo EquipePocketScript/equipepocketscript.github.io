@@ -23,7 +23,7 @@
             <p id="name-player"></p>
             <p id="timer-pointer"></p>
             <div class="buttons-area">
-                <button class="buttons play-again"><i class="bi bi-arrow-clockwise"> </i>Jogar Novamente</i></button>
+                <button class="buttons play-again" onclick="recarrega();"><i class="bi bi-arrow-clockwise"> </i>Jogar Novamente</i></button>
                 <button class="buttons back-home"><i class="bi bi-house-door-fill"> </i>Voltar a Home</i></button>
             </div>
         </div>
@@ -33,6 +33,11 @@
         </div>
     </main>
 
+    <script>
+        const recarrega = () => {
+            location.reload();
+        }
+    </script>
 
 </body>
 </html>

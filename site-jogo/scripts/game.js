@@ -5,16 +5,26 @@ const interfaceWinner = document.querySelector('#interface');
 const headerContainer = document.querySelector('#header-container')
 
 const personagens = [
+    'adele',
+    'anitta',
+    'ariana-grande',
+    'beyonce',
     'billie-eilish',
-    'coraline',
-    'ekko',
-    'isabela-boscov',
-    'jobu-tupaki',
+    'bruno-mars',
+    'demi-lovato',
+    'doja-cat',
+    'dua-lipa',
+    'halsey',
+    'katy-perry',
     'lady-gaga',
+    'lana-del-rey',
     'lisa',
-    'lux',
-    'princess-peach',
-    'tanjiro-kamado'
+    'michael-jackson',
+    'miley-cyrus',
+    'rihanna',
+    'shakira',
+    'sza',
+    'taylor-swift'
 ];
 
 const createElement = (tag, className) => {
@@ -28,7 +38,7 @@ let segundaCard = '';
 
 const apareceInterface = () => {
 
-	const frase1 = `Parabéns, ${spanPlayer.innerHTML}, você venceu! :D`;
+	const frase1 = `Parabéns, ${spanPlayer.innerHTML}! :D`;
 	const frase2 = `Seu tempo de jogo foi de ${timer.innerHTML}s.`;
 	interface.removeAttribute('hidden');
     interface.setAttribute('class', 'winner-interface')
@@ -41,7 +51,7 @@ const apareceInterface = () => {
 const checarEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
-    if(disabledCards.length == (personagens.length)*2) {
+    if(disabledCards.length == 20) {
         clearInterval(this.loop);
         setTimeout(() => {
             apareceInterface();
@@ -117,8 +127,6 @@ const createCard = (personagem) => {
 
     audio.src = `../audios/${personagem}.mp3`;
 
-    audio.play();
-
     card.appendChild(front);
     card.appendChild(back);
     card.appendChild(audio);
@@ -129,12 +137,20 @@ const createCard = (personagem) => {
     return card;
 }
 
+const embaralhaCartas = (lista) => {
+    const armazenaCartas = [];
+    lista.sort(() => Math.random() - 0.5);
+    for(let i = 0; i < 10; i++) {
+        armazenaCartas.push(lista[i]);
+    }
+    const listaEmbaralhada = [...armazenaCartas, ...armazenaCartas];
+    return listaEmbaralhada.sort(() => Math.random() - 0.5);
+}
+
 const loadGame = () => {
 
-    const duplicaPersonagens = [ ...personagens, ...personagens ]
-
-    const embaralhaLista = duplicaPersonagens.sort( () => Math.random() - 0.5 );
-
+    const embaralhaLista = embaralhaCartas(personagens);
+    
     embaralhaLista.forEach((personagem) => {
 
         const card = createCard(personagem);
