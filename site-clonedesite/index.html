@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17f4f369b6.js" crossorigin="anonymous"></script>
+    <title>CloneGoogle</title>
+    <style>
+        #keyboard {
+          display: none;
+          position: fixed;
+          bottom: 10px;
+          left: 10px;
+          background-color: #f1f1f1;
+          border: 1px solid #ccc;
+          padding: 10px;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+          font-family: Arial, sans-serif;
+          z-index: 9999;
+        }
+        
+        #keyboard.visible {
+          display: block;
+        }
+        
+        #keyboard button {
+          width: 40px;
+          height: 40px;
+          margin: 5px;
+          font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <ul>
+                <li><a href="https://mail.google.com/mail/?authuser=0">Gmail</a></li>
+                <li><a href="https://www.google.com.br/imghp?hl=pt-BR&tab=ri&ogbl">Imagens</a></li>
+                <li><a href="https://workspace.google.com/intl/pt-BR/features/"><img src="img/bars.png" alt=""></a></li>
+                <button onclick="window.location.href='https://accounts.google.com/v3/signin/identifier?dsh=S-586600549%3A1686510517060247&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&ffgf=1&ifkv=Af_xneEvfIpD-XqnXR5-eUxS2TeloYIUHStF_IalC4ZT2UkB-J7On_Vx8nxCAbnTterHxZG6svwQ&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin'" class="button-link">Fazer login</button>
+            </ul>
+        </header>
+        <main class="main">
+            <img src="img/google.png" alt="google">
+            <div class="searchBox">
+                <i class="fas fa-search"></i>
+                <input type="text" class="search" onkeydown="handleKeyDown(event)">
+                <i class="fas fa-keyboard" onclick="toggleKeyboard()"></i>
+                <a href="pesquisaporvoz.html"><i class="fas fa-microphone"></i></a>
+            </div>
+            <div class="button">
+                <button class="btn">Pesquisa Google</button>
+                <button onclick="window.location.href='https://www.google.com/doodles'" class="button-link">Estou com sorte</button>
+            </div>
+        </main>
+        <footer>
+            <div class="line line1">
+                <p class="line_top">Brasil</p>
+            </div>
+            <div class="line line2">
+                <ul>
+                    <li><a href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre</a></li>
+                    <li><a href="https://ads.google.com/intl/pt-BR_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidade</a></li>
+                    <li><a href="https://smallbusiness.withgoogle.com/intl/pt-BR_br/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=BR#!/">Negócios</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/?fg=1">Como funciona a Pesquisa</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy?hl=pt-BR&fg=1">Privacidade</a></li>
+                    <li><a href="https://policies.google.com/terms?hl=pt-BR&fg=1">Termos</a></li>
+                    <li><a href="https://www.google.com.br/preferences?hl=pt-BR&fg=1">Configurações</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+
+    <div id="keyboard">
+        <button onclick="appendToSearch('Q')">Q</button>
+        <button onclick="appendToSearch('W')">W</button>
+        <button onclick="appendToSearch('E')">E</button>
+        <button onclick="appendToSearch('R')">R</button>
+        <button onclick="appendToSearch('T')">T</button>
+        <button onclick="appendToSearch('Y')">Y</button>
+        <button onclick="appendToSearch('U')">U</button>
+        <button onclick="appendToSearch('I')">I</button>
+        <button onclick="appendToSearch('O')">O</button>
+        <button onclick="appendToSearch('P')">P</button>
+        <br>
+        <button onclick="appendToSearch('A')">A</button>
+        <button onclick="appendToSearch('S')">S</button>
+        <button onclick="appendToSearch('D')">D</button>
+        <button onclick="appendToSearch('F')">F</button>
+        <button onclick="appendToSearch('G')">G</button>
+        <button onclick="appendToSearch('H')">H</button>
+        <button onclick="appendToSearch('J')">J</button>
+        <button onclick="appendToSearch('K')">K</button>
+        <button onclick="appendToSearch('L')">L</button>
+        <br>
+        <button onclick="appendToSearch('Z')">Z</button>
+        <button onclick="appendToSearch('X')">X</button>
+        <button onclick="appendToSearch('C')">C</button>
+        <button onclick="appendToSearch('V')">V</button>
+        <button onclick="appendToSearch('B')">B</button>
+        <button onclick="appendToSearch('N')">N</button>
+        <button onclick="appendToSearch('M')">M</button>
+        <br>
+        <button onclick="deleteLastChar()"><i class="fas fa-backspace"></i></button>
+        <button onclick="appendToSearch(' ')">Space</button>
+        <button onclick="submitSearch()"><i class="fas fa-check"></i></button>
+        <button onclick="toggleKeyboard()"><i class="fas fa-times"></i></button>
+    </div>
+
+    <script>
+        function toggleKeyboard() {
+          var keyboard = document.getElementById("keyboard");
+          keyboard.classList.toggle("visible");
+        }
+
+        function appendToSearch(char) {
+          var searchInput = document.querySelector(".search");
+          searchInput.value += char;
+        }
+
+        function deleteLastChar() {
+          var searchInput = document.querySelector(".search");
+          searchInput.value = searchInput.value.slice(0, -1);
+        }
+
+        function submitSearch() {
+          var searchForm = document.querySelector("form");
+          searchForm.submit();
+        }
+
+        function handleKeyDown(event) {
+          if (event.keyCode === 13) {
+            submitSearch();
+          }
+        }
+    </script>
+</body>
+</html>

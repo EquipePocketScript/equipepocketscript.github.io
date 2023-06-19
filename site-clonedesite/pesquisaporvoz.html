@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa por Voz</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .icon {
+            font-size: 48px;
+            color: #4285F4;
+            margin-bottom: 16px;
+        }
+        
+        .text {
+            font-size: 24px;
+            color: #555555;
+            margin-bottom: 16px;
+        }
+        
+        .animation {
+            width: 80px;
+            height: 80px;
+            border: 8px solid #4285F4;
+            border-radius: 50%;
+            animation: pulse 1s infinite ease-in-out;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(0.8);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.8);
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <i class="icon">🎤</i>
+        <p class="text">Pesquisando por voz...</p>
+        <div class="animation"></div>
+    </div>
+</body>
+</html>

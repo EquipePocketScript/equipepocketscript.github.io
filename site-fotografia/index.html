@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS - Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!--header-->
+    <header id="header" class="vh-100 flex"> 
+        <div class="container">
+            <div class="header-content">
+
+                <h1>Gallery <br><span class="typewrite" 
+                    data-loop="yes" data-speed="100" 
+                    data-delay="2000" 
+                    data-words='["Movies", "Art"]'></span>
+                </h1>
+                <h3>PocketScript</h3>
+
+                <ul class="social-links">
+                    <li>
+                        <a href="#" class="flex">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+                    
+
+            </div>
+        </div>
+    </header>
+
+    <!--fim do header-->
+
+    <!--MAIN-->
+
+    <main>
+        <section id="about" class="about py-7">
+            <div class="container">
+                <div class="about-content grid">
+
+                    <div class="about-left">
+                        <img src="midia/paleta.webp" alt="imagem2">
+
+                    </div>
+                    <div class="about-right">
+                        <div class="title">
+                            <h2>Proposta</h2>
+                        </div>
+                        <p class="lead">Esse site tem a proposta de reunir cenas de filmes e séries, importantes para a cultura pop e sétima arte, que sigam uma paleta de cores semelhante a adotada pela equipe PocketScript!</p>
+                        <a href="#work " class="btn-down">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       <!--Fotos-->
+       <section id="portfolio" class="vh-100 py-7">
+        <div class="container">
+            <div class="portfolio-content">
+                <div class="title">
+                    <h2>Cenas Escolhidas;</h2>
+                    <a href="#contact" class="btn-down-white">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div class="portfolio-grid grid">
+                    <div><img src="midia/imagem01.webp" alt=""></div>
+                    <div><img src="midia/imagem002.jpg" alt=""></div>
+                    <div><img src="midia/imagem003.jpg" alt=""></div>
+                    <div><img src="midia/materiasrepositorio-1504618490-1.jpeg" alt=""></div>
+                    <div><img src="midia/last.jpg" alt=""></div>
+                    <div><img src="midia/suspiria.jpg" alt=""></div>
+                    <div><img src="midia/006.jpg" alt=""></div>
+                    <div><img src="midia/007.jpg" alt=""></div>
+                    <div><img src="midia/footer.jpg" alt=""></div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!--FOOTER-->
+
+       <footer id="footer" class="py-7">
+        <div class="container">
+            <div class="footer-conatiner">
+            <div>
+                <h3>POCKETSCRIPT</h3>
+                
+            </div>
+
+            <div>
+                <h3>Sabrina Lopes, Suzana Karizi, Vitor Gabriel e Yuri Cardoso</h3>
+                
+                <ul class="flex">
+                
+                </ul>
+            </div>    
+
+            </div>
+        </div>
+       </footer>
+
+    </main>
+
+    <div class="button-arrow">
+        <button class="arrow" onclick="back_toStart()"><i class="bi bi-arrow-left"></i></button>
+    </div>
+
+    <script>
+    function back_toStart() {
+        location.replace("../site-portfolio/index.html")
+    }
+    </script>
+
+    
+
+    <script src="typewriting-master/typewriting.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  p {
+    list-style-type: disc;
+    margin-left: 60px;
+  }
