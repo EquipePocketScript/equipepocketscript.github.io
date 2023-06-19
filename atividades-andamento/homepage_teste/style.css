@@ -44,11 +44,11 @@ nav ul li a{
 .btn{
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border: 0;
     outline: 0;
-    border-radius: 5px;
-    background-color: #9b509b;
+    border-radius: 400px;
+    background-color: purple;
     color:#fff;
     font-weight: 500;
     cursor: pointer;
@@ -56,7 +56,7 @@ nav ul li a{
 
 .btn image{
     width: 20px;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 .content{
@@ -64,6 +64,7 @@ nav ul li a{
     color: #fff;
     max-width: 1500px;
     margin-bottom: 15%;
+
 }
 .content h1{
     font-size: 70px;
@@ -80,6 +81,7 @@ nav ul li a{
     border-radius: 200px;
     padding: 50px;
     margin-top: 30px;
+    text-align: center
 }
 
 .content form input{
@@ -93,4 +95,6 @@ nav ul li a{
     font-size: 15px;
     padding: 5px 30px;
 }
-
+.content .btn{
+    
+}
