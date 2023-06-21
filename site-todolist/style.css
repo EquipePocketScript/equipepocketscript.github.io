@@ -10,11 +10,37 @@ body{
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(135deg, #760094, #e79ce4);
+  background: linear-gradient(135deg,#e79ce4, #760094);
+}
+  nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 5%;
+}
+ .logo{
+    width: 50px;
+    cursor:before;
+ }
+ nav ul{
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-right: 60px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
 }
 ::selection{
   color: #fff;
-  background: #3C87FF;
+  background: #a13cff;
 }
 .wrapper{
   max-width: 405px;
@@ -46,7 +72,7 @@ body{
 .task-input input:focus,
 .task-input input.active{
   padding-left: 52px;
-  border: 2px solid #3C87FF;
+  border: 2px solid #973cff;
 }
 .task-input input::placeholder{
   color: #bfbfbf;
@@ -70,7 +96,7 @@ body{
   margin-left: 0;
 }
 .filters span.active{
-  color: #3C87FF;
+  color: #873cff;
 }
 .controls .clear-btn{
   border: none;
@@ -84,7 +110,7 @@ body{
   letter-spacing: 0.3px;
   pointer-events: none;
   transition: transform 0.25s ease;
-  background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
+  background: linear-gradient(135deg, #ce6feb 0%, #600496 100%);
 }
 .clear-btn.active{
   opacity: 0.9;
