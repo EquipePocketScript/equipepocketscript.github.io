@@ -383,8 +383,12 @@ new Chart(ctx, {
     type: 'bar',
     data: {
       labels: t,
+      font: {
+        size: 18,
+        style: "bold",
+      },
       datasets: [{
-        label: '# of Votes',
+        label: 'Animes Populares',
         data: v,
         borderWidth: 1,
         backgroundColor: 'rgba(70, 0, 239, 0.65)'

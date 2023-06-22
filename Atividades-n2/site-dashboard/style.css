@@ -1,0 +1,13 @@
+.graphes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+}
+
+.graphic-table {
+    min-width: 80%;
+    border-radius: 10px;
+    box-shadow:  0 0 8px 3px gray;
+}
