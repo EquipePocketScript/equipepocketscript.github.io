@@ -1,4 +1,4 @@
-{
+var lista = {
     "animes": [
         {
          "Anime": "Attack on Titan",
@@ -351,4 +351,54 @@
          "Tipo": "Série de TV"
         }
        ]
+};
+
+const ctx = document.getElementsByClassName('graphic-table');
+
+const pegaNomes = () => {
+    const nomes = [];
+    for (let index = 0; index < lista.animes.length; index++) {
+        nomes.push(lista.animes[index].Anime);
+    }
+    return nomes;
 }
+
+const pegaValores = () => {
+    const valores = [];
+    for (let index = 0; index < lista.animes.length; index++) {
+        valores.push(lista.animes[index].Popularidade);
+    }
+    return valores;
+}
+
+var t = pegaNomes();
+
+console.log(t);
+
+var v = pegaValores();
+
+console.log(v);
+
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: t,
+      font: {
+        size: 18,
+        style: "bold",
+      },
+      datasets: [{
+        label: 'Animes Populares',
+        data: v,
+        borderWidth: 1,
+        backgroundColor: 'rgba(70, 0, 239, 0.65)'
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
