@@ -82,6 +82,8 @@ const animeList = [
         }
 ]
 
+let listaM = animeList;
+
 const pega_animesGenero = (genero) => {
     const animesGenero = [];
 
@@ -106,7 +108,7 @@ console.log(novaLista); */
 const data = {
     datasets: [{
         label: 'Popularidade',
-        data: animeList,
+        data: listaM,
         backgroundColor: 'rgba(70, 0, 239, 0.65)',
         borderColor: 'rgba(70, 0, 239, 1)',
         borderWidth: 1.5,
@@ -138,7 +140,7 @@ const updateClassification = (option) => {
     myChart.data.datasets[0].parsing.yAxisKey = `dados.${option.value}`;
     myChart.update();
 }
-/* 
+
 const sepra_listaGenero = (genero) => {
     const novaLista = [];
     animeList.forEach((elemento) => {
@@ -151,13 +153,18 @@ const sepra_listaGenero = (genero) => {
     return novaLista;
 }
 
+const genreSelect = document.getElementById('genre-select');
+
 const genreAll = () => {
-    myChart.data = animeList;
-    myChart.data.datasets[0].parsing.xAxisKey = 'anime';
-    myChart.data.datasets[0].parsing.yAxisKey = `dados.${pointType.options[pointType.selectedIndex].value}`;
+    const typeDate = pointType.options[pointType.selectedIndex].value;
+    listaM = sepra_listaGenero(genreSelect.options[genreSelect.selectedIndex].value);
+    const dados = Object.keys(listaM[0]);
+    myChart.data = listaM;
+    myChart.data.parsing.xAxisKey = dados[0];
+    myChart.data.parsing.yAxisKey = `${dados[1]}.${typeDate}`;
     myChart.update();
 }
-
+/*
 const updateGenre = (genero) => {
     console.log(genero.value);
     if (genero.value == 'all') {

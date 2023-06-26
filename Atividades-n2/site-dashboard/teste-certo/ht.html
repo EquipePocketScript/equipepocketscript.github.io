@@ -6,27 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-
-    <small>Gênero</small>
-    <select id="genre-select" onchange="genreAll();">
-        <option value="all">Todos</option>
+    <select id="selectGenero" onchange="atualizarGrafico();">
+        <option value="todos">Todos</option>
         <option value="action">Ação</option>
         <option value="comedy">Comédia</option>
         <option value="drama">Drama</option>
         <option value="fantasy">Fantasia</option>
-        <option value="suspense">Suspense</option>
     </select>
 
-    <small>Classificação</small>
-    <select id="point-type" onchange="updateClassification(this);">
+    <select id="selectOrdenacao" onchange="atualizarGrafico();">
         <option value="popularity">Popularidade</option>
         <option value="score">Pontuação</option>
     </select>
 
-    <canvas id="myChart"></canvas>
+    <canvas id="meuGrafico"></canvas>
+    <div id="anime-info">
+        <h4>Anime</h4>
+        <p>imagem aqui</p>
+        <p>Popularidade</p>
+        <p>Pontuação</p>
+        <p>autor</p>
+        <p>quantidade ep</p>
+        <p>sinopse</p>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
+    <script src="novoTeste.js"></script>
     
 </body>
 </html>
