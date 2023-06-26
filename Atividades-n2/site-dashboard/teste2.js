@@ -1,404 +1,498 @@
-var lista = {
-    "animes": [
-        {
-         "Anime": "Attack on Titan",
-         "Gênero": "Ação, Drama, Suspense",
-         "Popularidade": 3738467,
-         "Pontuação": 8.54,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Death Note",
-         "Gênero": "Sobrenatural, Suspense",
-         "Popularidade": 3707205,
-         "Pontuação": 8.62,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Fullmetal Alchemist: Brotherhood",
-         "Gênero": "Ação, Aventura, Drama, Fantasia",
-         "Popularidade": 3171382,
-         "Pontuação": 9.1,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "One Punch Man",
-         "Gênero": "Ação, Comédia",
-         "Popularidade": 3053695,
-         "Pontuação": 8.5,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Sword Art Online",
-         "Gênero": "Ação, Aventura, Fantasia, Romance",
-         "Popularidade": 2948123,
-         "Pontuação": 7.2,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "My Hero Academia",
-         "Gênero": "Ação",
-         "Popularidade": 2877907,
-         "Pontuação": 7.89,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Demon Slayer: Kimetsu no Yaiba",
-         "Gênero": "Ação, Fantasia",
-         "Popularidade": 2800619,
-         "Pontuação": 8.51,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Naruto",
-         "Gênero": "Ação, Aventura, Fantasia, Romance",
-         "Popularidade": 2712968,
-         "Pontuação": 7.98,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Tokyo Ghoul",
-         "Gênero": "Ação, Fantasia, Terror",
-         "Popularidade": 2695500,
-         "Pontuação": 7.79,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Hunter x Hunter (2011)",
-         "Gênero": "Ação, Aventura, Fantasia",
-         "Popularidade": 2651528,
-         "Pontuação": 9.04,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Your Name.",
-         "Gênero": "Drama, Sobrenatural",
-         "Popularidade": 2592651,
-         "Pontuação": 8.85,
-         "Tipo": "Filme"
-        },
-        {
-         "Anime": "Attack on Titan Season 2",
-         "Gênero": "Ação, Drama, Suspense",
-         "Popularidade": 2562103,
-         "Pontuação": 8.5,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Steins;Gate",
-         "Gênero": "Drama, Sci-Fi, Suspense",
-         "Popularidade": 2436561,
-         "Pontuação": "9,07",
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "My Hero Academia Season 2",
-         "Gênero": "Ação",
-         "Popularidade": 2407160,
-         "Pontuação": 8.11,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Naruto Shippuden",
-         "Gênero": "Ação, Aventura, Fantasia",
-         "Popularidade": 2344977,
-         "Pontuação": 8.26,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "No Game, No Life",
-         "Gênero": "Comédia, Fantasia, Ecchi",
-         "Popularidade": 2302935,
-         "Pontuação": 8.08,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Jujutsu Kaisen",
-         "Gênero": "Ação, Fantasia",
-         "Popularidade": 2245997,
-         "Pontuação": 8.64,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Attack on Titan Season 3",
-         "Gênero": "Ação, Drama",
-         "Popularidade": 2207624,
-         "Pontuação": 8.62,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "A Silent Voice",
-         "Gênero": "Drama",
-         "Popularidade": 2188997,
-         "Pontuação": 8.94,
-         "Tipo": "Filme"
-        },
-        {
-         "Anime": "One Piece",
-         "Gênero": "Ação, Aventura, Fantasia",
-         "Popularidade": 2164293,
-         "Pontuação": 8.69,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Code Geass: Lelouch of the Rebellion",
-         "Gênero": "Ação, Drama, Sci-Fi",
-         "Popularidade": 2148665,
-         "Pontuação": 8.7,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Toradora!",
-         "Gênero": "Drama, Romance",
-         "Popularidade": 2118641,
-         "Pontuação": 8.08,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Your Lie in April",
-         "Gênero": "Drama, Romance",
-         "Popularidade": 2108629,
-         "Pontuação": 8.65,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Attack on Titan Season 3 Part 2",
-         "Gênero": "Ação, Drama",
-         "Popularidade": 2098954,
-         "Pontuação": 9.06,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Re:ZERO -Starting Life in Another World-",
-         "Gênero": "Drama, Fantasia, Suspense",
-         "Popularidade": 2088480,
-         "Pontuação": 8.23,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "My Hero Academia Season 3",
-         "Gênero": "Ação",
-         "Popularidade": 2082318,
-         "Pontuação": 8.04,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Noragami",
-         "Gênero": "Ação, Fantasia",
-         "Popularidade": 2076461,
-         "Pontuação": 7.95,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Angel Beats!",
-         "Gênero": "Drama, Sobrenatural",
-         "Popularidade": 2008477,
-         "Pontuação": 8.06,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Akame ga Kill!",
-         "Gênero": "Ação, Fantasia",
-         "Popularidade": 1995006,
-         "Pontuação": 7.47,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "ERASED",
-         "Gênero": "Mistério, Sobrenatural, Suspense",
-         "Popularidade": 1990923,
-         "Pontuação": 8.31,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "The Seven Deadly Sins",
-         "Gênero": "Ação, Aventura, Fantasia",
-         "Popularidade": 1971790,
-         "Pontuação": 7.67,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Mob Psycho 100",
-         "Gênero": "Ação, Comédia, Sobrenatural",
-         "Popularidade": 1953138,
-         "Pontuação": 8.49,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "The Future Diary",
-         "Gênero": "Ação, Sobrenatural, Suspense",
-         "Popularidade": 1944264,
-         "Pontuação": 7.42,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Assassination Classroom",
-         "Gênero": "Ação, Comédia",
-         "Popularidade": 1911745,
-         "Pontuação": 8.04,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Sword Art Online II",
-         "Gênero": "Ação, Aventura, Fantasia, Romance",
-         "Popularidade": 1900291,
-         "Pontuação": 6.7,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Haikyu!!",
-         "Gênero": "Esportes",
-         "Popularidade": 1867205,
-         "Pontuação": 8.44,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "The Promised Neverland",
-         "Gênero": "Fantaisa, Mistério, Sci-Fi, Suspense",
-         "Popularidade": 1862992,
-         "Pontuação": 8.51,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "KonoSuba: God's Blessing on This Wonderful World!",
-         "Gênero": "Aventura, Comédia, Fantasia",
-         "Popularidade": 1859416,
-         "Pontuação": 8.11,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Bleach",
-         "Gênero": "Ação, Aventura, Fantasia",
-         "Popularidade": 1853866,
-         "Pontuação": 7.92,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Blue Exorcist",
-         "Gênero": "Ação, Fantasia",
-         "Popularidade": 1852890,
-         "Pontuação": 7.5,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Attack on Titan: Final Season",
-         "Gênero": "Ação, Drama",
-         "Popularidade": 1842238,
-         "Pontuação": 8.8,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Parasyte: The Maxim",
-         "Gênero": "Ação, Terror, Sci-Fi",
-         "Popularidade": 1779115,
-         "Pontuação": 8.34,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Cowboy Bebop",
-         "Gênero": "Ação, Sci-Fi",
-         "Popularidade": 1768681,
-         "Pontuação": 8.75,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Spirited Away",
-         "Gênero": "Aventura, Sobrenatural",
-         "Popularidade": 1757850,
-         "Pontuação": 8.78,
-         "Tipo": "Filme"
-        },
-        {
-         "Anime": "Neon Genesis Evangelion",
-         "Gênero": "Ação, Vanguarda, Drama, Sci-Fi, Suspense",
-         "Popularidade": 1714937,
-         "Pontuação": 8.35,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Tokyo Ghoul √A",
-         "Gênero": "Ação, Fantasia, Terror",
-         "Popularidade": 1705520,
-         "Pontuação": 7.02,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Code Geass: Lelouch of the Rebellion R2",
-         "Gênero": "Ação, Drama, Sci-Fi",
-         "Popularidade": 1697280,
-         "Pontuação": 8.91,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Death Parade",
-         "Gênero": "Drama, Sobrenatural, Suspense",
-         "Popularidade": 1686297,
-         "Pontuação": 8.15,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Fairy Tail",
-         "Gênero": "Ação, Aventura, Fantasia",
-         "Popularidade": 1679619,
-         "Pontuação": 7.57,
-         "Tipo": "Série de TV"
-        },
-        {
-         "Anime": "Violet Evergarden",
-         "Gênero": "Drama, Fantasia",
-         "Popularidade": 1673947,
-         "Pontuação": 8.67,
-         "Tipo": "Série de TV"
-        }
-       ]
-};
+const animeList = [
+    {
+        anime: "Attack on Titan",
+        dados: {
+            genre: ["action", "drama", "suspense"],
+            popularity: 3738467,
+            score: 8.54,
+            type: "tv"}
+    },
+    {
+        anime: "Death Note",
+        dados: {
+            genre: ["supernatural", "suspense"],
+            popularity: 3707205,
+            score: 8.62,
+            type: "tv"}
+    },
+    {
+        anime: "Fullmetal Alchemist: Brotherhood",
+        dados: {
+            genre: ["action", "adventure", "drama", "fantasy"],
+            popularity: 3171382,
+            score: 9.1,
+            type: "tv"}
+    },
+    {
+         anime: "One Punch Man",
+         dados: {
+            genre: ["action", "comedy"],
+            popularity: 3053695,
+            score: 8.5,
+            type: "tv"}
+    },
+    {
+         anime: "Sword Art Online",
+         dados: {
+            genre: ["action", "adventure", "fantasy", "romance"],
+            popularity: 2948123,
+            score: 7.2,
+            type: "tv"
+         }
+    },
+    {
+         anime: "My Hero Academia",
+         dados: {
+            genre: ["action"],
+            popularity: 2877907,
+            score: 7.89,
+            type: "tv"}
+    },
+    {
+         anime: "Demon Slayer: Kimetsu no Yaiba",
+         dados: {
+            genre: ["action", "fantasy"],
+            popularity: 2800619,
+            score: 8.51,
+            type: "tv"}
+    },
+    {
+         anime: "Naruto",
+         dados: {
+            genre: ["action", "adventure", "fantasy", "romance"],
+            popularity: 2712968,
+            score: 7.98,
+            type: "tv"}
+    },
+    {
+         anime: "Tokyo Ghoul",
+         dados: {
+            genre: ["action", "fantasy", "horror"],
+            popularity: 2695500,
+            score: 7.79,
+            type: "tv"}
+    },
+    {
+         anime: "Hunter x Hunter (2011)",
+         dados: {
+            genre: ["action", "adventure", "fantasy"],
+            popularity: 2651528,
+            score: 9.04,
+            type: "tv"}
+    },
+    {
+      anime: "Your Name.",
+      dados: {
+        genre: ["drama", "supernatural"],
+        popularity: 2592651,
+        score: 8.85,
+        type: "film"
+      }
+    },
+    {
+      anime: "Attack on Titan Season 2",
+      dados: {
+        genre: ["action", "drama", "suspense"],
+        popularity: 2562103,
+        score: 8.5,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Steins;Gate",
+      dados: {
+        genre: ["drama", "sci-fi", "suspense"],
+        popularity: 2436561,
+        score: 9.07,
+        type: "tv"
+      }
+    },
+    {
+      anime: "My Hero Academia Season 2",
+      dados: {
+        genre: ["action"],
+        popularity: 2407160,
+        score: 8.11,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Naruto Shippuden",
+      dados: {
+        genre: ["action", "adventure", "fantasy"],
+        popularity: 2344977,
+        score: 8.26,
+        type: "tv"
+      }
+    },
+    {
+      anime: "No Game, No Life",
+         genre: ["comedy", "fantasy", "ecchi"],
+         popularity: 2302935,
+         score: 8.08,
+         type: "tv"
+    },
+    {
+      anime: "Jujutsu Kaisen",
+      dados: {
+        genre: ["action", "fantasy"],
+        popularity: 2245997,
+        score: 8.64,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Attack on Titan Season 3",
+      dados: {
+        genre: ["action", "drama"],
+        popularity: 2207624,
+        score: 8.62,
+        type: "tv"
+      }
+    },
+    {
+      anime: "A Silent Voice",
+      dados: {
+        genre: ["drama"],
+        popularity: 2188997,
+        score: 8.94,
+        type: "film"
+      }
+    },
+    {
+      anime: "One Piece",
+      dados: {
+        genre: ["action", "adventure", "fantasy"],
+        popularity: 2164293,
+        score: 8.69,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Code Geass: Lelouch of the Rebellion",
+      dados: {
+        genre: ["action", "drama", "sci-fi"],
+        popularity: 2148665,
+        score: 8.7,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Toradora!",
+      dados: {
+        genre: ["drama", "romance"],
+        popularity: 2118641,
+        score: 8.08,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Your Lie in April",
+      dados: {
+        genre: ["drama", "romance"],
+        popularity: 2108629,
+        score: 8.65,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Attack on Titan Season 3 Part 2",
+      dados: {
+        genre: ["action", "drama"],
+        popularity: 2098954,
+        score: 9.06,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Re:ZERO -Starting Life in Another World-",
+      dados: {
+        genre: ["drama", "fantasy", "suspense"],
+        popularity: 2088480,
+        score: 8.23,
+        type: "tv"
+      }
+    },
+    {
+      anime: "My Hero Academia Season 3",
+      dados: {
+        genre: ["action"],
+        popularity: 2082318,
+        score: 8.04,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Noragami",
+      dados: {
+        genre: ["action", "fantasy"],
+        popularity: 2076461,
+        score: 7.95,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Angel Beats!",
+      dados: {
+        genre: ["drama", "supernatural"],
+        popularity: 2008477,
+        score: 8.06,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Akame ga Kill!",
+      dados: {
+        genre: ["action", "fantasy"],
+        popularity: 1995006,
+        score: 7.47,
+        type: "tv"
+      }
+    },
+    {
+      anime: "ERASED",
+      dados: {
+        genre: ["mistery", "supernatural", "suspense"],
+        popularity: 1990923,
+        score: 8.31,
+        type: "tv"
+      }
+    },
+    {
+      anime: "The Seven Deadly Sins",
+      dados: {
+        genre: ["action", "adventure", "fantasy"],
+        popularity: 1971790,
+        score: 7.67,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Mob Psycho 100",
+      dados: {
+        genre: ["action", "comedy", "supernatural"],
+        popularity: 1953138,
+        score: 8.49,
+        type: "tv"
+      }
+    },
+    {
+      anime: "The Future Diary",
+      dados: {
+        genre: ["action", "supernatural", "suspense"],
+        popularity: 1944264,
+        score: 7.42,
+        type: "tv"
+      }
+    },
+    {
+      anime: "Assassination Classroom",
+      dados: {
+        genre: ["action", "comedy"],
+        popularity: 1911745,
+        score: 8.04,
+        type: "tv"  
+      }
+    },
+    {
+      anime: "Sword Art Online II",
+      dados: {
+        genre: ["action", "adventure", "fantasy", "romance"],
+        popularity: 1900291,
+        score: 6.7,
+        type: "tv"  
+      }
+    },
+    {
+      anime: "Haikyu!!",
+      dados: {
+        genre: ["sports"],
+        popularity: 1867205,
+        score: 8.44,
+        type: "tv"
+      }
+    },
+    {
+      anime: "The Promised Neverland",
+      genre: "Fantaisa, mistery, sci-fi, suspense",
+      popularity: 1862992,
+      score: 8.51,
+      type: tv
+    },
+    {
+      anime: "KonoSuba: God's Blessing on This Wonderful World!",
+      genre: "adventure, comedy, fantasy",
+      popularity: 1859416,
+      score: 8.11,
+      type: tv
+    },
+    {
+      anime: "Bleach",
+      genre: "action, adventure, fantasy",
+      popularity: 1853866,
+      score: 7.92,
+      type: tv
+    },
+    {
+      anime: "Blue Exorcist",
+      genre: "action, fantasy",
+      popularity: 1852890,
+      score: 7.5,
+      type: tv
+    },
+    {
+      anime: "Blue Exorcist",
+      genre: "action, fantasy",
+      popularity: 1852890,
+      score: 7.5,
+      type: tv
+    },
+    {
+      anime: "Parasyte: The Maxim",
+      genre: "action, horror, sci-fi",
+      popularity: 1779115,
+      score: 8.34,
+      type: tv
+    },
+    {
+      anime: "Cowboy Bebop",
+      genre: "action, sci-fi",
+      popularity: 1768681,
+      score: 8.75,
+      type: tv
+    },
+    {
+      anime: "Spirited Away",
+      genre: "adventure, supernatural",
+      popularity: 1757850,
+      score: 8.78,
+      type: film
+    },
+    {
+      anime: "Neon Genesis Evangelion",
+      genre: "action, vanguard, drama, sci-fi, suspense",
+      popularity: 1714937,
+      score: 8.35,
+      type: tv
+    },
+    {
+      anime: "Tokyo Ghoul √A",
+      genre: "action, fantasy, horror",
+      popularity: 1705520,
+      score: 7.02,
+      type: tv
+    },
+    {
+      anime: "Code Geass: Lelouch of the Rebellion R2",
+      genre: "action, drama, sci-fi",
+      popularity: 1697280,
+      score: 8.91,
+      type: tv
+    },
+    {
+      anime: "Death Parade",
+      genre: "drama, supernatural, suspense",
+      popularity: 1686297,
+      score: 8.15,
+      type: tv
+    },
+    {
+      anime: "Fairy Tail",
+      genre: "action, adventure, fantasy",
+      popularity: 1679619,
+      score: 7.57,
+      type: tv
+    },
+    {
+      anime: "Violet Evergarden",
+      genre: "drama, fantasy",
+      popularity: 1673947,
+      score: 8.67,
+      type: tv
+    },
+];
 
-const ctx = document.getElementsByClassName('graphic-table');
+function atualizarGrafico() {
+  const selectGenero = document.getElementById('selectGenero');
+  const selectedGenre = selectGenero.value;
 
-const pegaNomes = () => {
-    const nomes = [];
-    for (let index = 0; index < lista.animes.length; index++) {
-        nomes.push(lista.animes[index].Anime);
-    }
-    return nomes;
+  const selectOrdenacao = document.getElementById('selectOrdenacao');
+  const selectedOrdenacao = selectOrdenacao.value;
+
+  let animesFiltrados = [];
+  
+  if (selectedGenre == 'todos') {
+    animesFiltrados = animeList;
+  } else {
+    animesFiltrados = animeList.filter(anime => anime.dados.genre.includes(selectedGenre));
+  }
+  
+  // Ordenar animes por popularidade ou pontuaction
+  if (selectedOrdenacao == 'popularity') {
+    animesFiltrados.sort((a, b) => b.dados.popularity - a.dados.popularity);
+  } else if (selectedOrdenacao == 'score') {
+    animesFiltrados.sort((a, b) => b.dados.score - a.dados.score);
+  }
+  
+  // Chame a função para plotar o gráfico com os animes filtrados
+  plotarGrafico(animesFiltrados);
 }
 
-const pegaValores = () => {
-    const valores = [];
-    for (let index = 0; index < lista.animes.length; index++) {
-        valores.push(lista.animes[index].Popularidade);
-    }
-    return valores;
-}
+let meuGrafico; // Variável global para armazenar a instância do gráfico
 
-var t = pegaNomes();
+function plotarGrafico(animesFiltrados) {
+  const labels = animesFiltrados.map(anime => anime.anime);
+  let data;
 
-console.log(t);
+  const selectOrdenacao = document.getElementById('selectOrdenacao');
+  const selectedOrdenacao = selectOrdenacao.value;
 
-var v = pegaValores();
+  if (selectedOrdenacao == 'popularity') {
+    data = animesFiltrados.map(anime => anime.dados.popularity);
+  } else if (selectedOrdenacao == 'score') {
+    data = animesFiltrados.map(anime => anime.dados.score);
+  }
 
-console.log(v);
+  const ctx = document.getElementById('meuGrafico').getContext('2d');
 
-new Chart(ctx, {
+  if (meuGrafico) {
+    meuGrafico.destroy();
+  }
+
+  meuGrafico = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: t,
-      font: {
-        size: 18,
-        style: "bold",
-      },
+      labels: labels,
       datasets: [{
-        label: 'Animes Populares',
-        data: v,
-        borderWidth: 1,
-        backgroundColor: 'rgba(70, 0, 239, 0.65)'
+        label: selectedOrdenacao == 'popularity' ? 'Popularidade' : 'Pontuaction',
+        data: data,
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1
       }]
     },
     options: {
+      responsive: true,
       scales: {
         y: {
           beginAtZero: true
         }
+      },
+      onClick: (event, elements) => {
+        if (elements.length > 0) {
+          const index = elements[0].index;
+          const animeSelecionado = animesFiltrados[index];
+          // Chame a função que trata o clique na barra passando o anime selecionado
+          handleBarClick(animeSelecionado);
+        }
       }
     }
   });
+}
+
+atualizarGrafico();
+
+function handleBarClick(anime) {
+  // Lógica para tratar o clique na barra do gráfico
+  console.log('Barra clicada:', anime.anime);
+}
