@@ -21,7 +21,7 @@ const loader = document.querySelector("#loader");
 const suggestionContainer = document.querySelector("#suggestions");
 const suggestionButtons = document.querySelectorAll("#suggestions button");
 
-// Loader
+
 const toggleLoader = () => {
   loader.classList.toggle("hide");
 };
@@ -39,7 +39,7 @@ const getWeatherData = async (city) => {
   return data;
 };
 
-// Tratamento de erro
+
 const showErrorMessage = () => {
   errorMessageContainer.classList.remove("hide");
 };
@@ -72,7 +72,7 @@ const showWeatherData = async (city) => {
   umidityElement.innerText = `${data.main.humidity}%`;
   windElement.innerText = `${data.wind.speed}km/h`;
 
-  // Change bg image
+
   document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
 
   weatherContainer.classList.remove("hide");
@@ -94,7 +94,7 @@ cityInput.addEventListener("keyup", (e) => {
   }
 });
 
-// Sugestões
+
 suggestionButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const city = btn.getAttribute("id");
