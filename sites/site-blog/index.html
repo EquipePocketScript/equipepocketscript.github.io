@@ -7,6 +7,45 @@
     <title>Blog Website </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .buttonContainer button {
+    background-color: rgba(126, 43, 194, 0.85);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 1px rgba(126, 43, 194, 0.65);
+}
+
+.buttonContainer button:hover {
+    opacity: 0.8;
+}
+
+.button-arrow {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 5px;
+}
+
+.button-arrow .arrow {
+    background-color: indigo;
+    opacity: 0.3;
+    color: white;
+    font-size: 30px;
+    padding: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-arrow .arrow:hover {
+    opacity: 1;
+}
+    </style>
 
 </head>
 <body>
@@ -258,7 +297,15 @@
     <div class="credit">Criado por <span>Pocket Script Developers</span> | Todos os direitos reservados</div>
 
 </section>
+<div class="button-arrow">
+    <button class="arrow" onclick="back_toStart()">Volta aqui!</button>
+  </div>
 <script src="js/script.js"></script>
+<script>
+    function back_toStart() {
+        location.replace("../site-portfolio/index.html")
+    }
+    </script>
     
 </body>
 </html>
