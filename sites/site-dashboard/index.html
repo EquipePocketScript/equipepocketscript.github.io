@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>PcoketScript - Dashboard</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #6610f2;">
+        <div class="container-fluid" style="color: white;">
+          <a class="navbar-brand" href="#"><span style="top: 5px; opacity: 0.8;">Pocket</span><span style="margin-top: 5px;">Script</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfólio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Serviços
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../site-jogo/index.html">Jogo</a></li>
+                  <li><a class="dropdown-item" href="../site-climetempoapi/index.html">Clima</a></li>
+                  <li><a class="dropdown-item" href="../site-todolist/index.html">To Do List</a></li>
+                  <li><a class="dropdown-item" href="../site-blog/index.html">Nosso Blog</a></li>
+                  <li><a class="dropdown-item" href="../site-dashboard/index.html">Animes Populares</a></li>
+                  <li><a class="dropdown-item" href="../site-clonedesite/index.html">Pegadinha</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../site-evento/index.html">Show Aespa</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <div id="list-options">
+        <div id="options">
+            <small class="genre-box description">gênero</small>
+            <select id="genre-option" onchange="atualizarGrafico();">
+                <option value="todos">Todos</option>
+                <option value="action">Ação</option>
+                <option value="romance">Romance</option>
+                <option value="adventure">Aventura</option>
+                <option value="drama">Drama</option>
+                <option value="suspense">Suspense</option>
+            </select>
+        </div>
+        <div id="options" onchange="atualizarGrafico();">
+            <small class="score-box description">ordenação</small>
+            <select id="score-option">
+                <option value="popularity">Popularidade</option>
+                <option value="score">Pontuação</option>
+            </select>
+        </div>
+    </div>
+    <div id="chart-box">
+        <canvas id="myChart" style="padding: 10px;"></canvas>
+    </div>
+    <div id="anime-data">
+        <div id="anime-image">
+        </div>
+        <div id="anime-title" class="info-boxes">
+            <small id="name-anime">nome</small><br>
+            <span id="title-anime"></span>
+        </div>
+        <div id="year-classification">
+            <div id="anime-classification" class="info-boxes">
+                <span id="classification-anime"></span>
+            </div>
+            <div id="anime-year" class="info-boxes">
+                <small id="name-anime">ano</small><br>
+                <span id="year-anime"></span>
+            </div>
+            <div id="anime-studio" class="info-boxes">
+                <small id="name-anime">estúdio</small><br>
+                <span id="studio-anime"></span>
+            </div>
+        </div>
+        <div id="anime-duration" class="info-boxes">
+            <small id="name-anime">duração</small><br>
+            <span id="duration-anime"></span>
+        </div>
+        <div id="anime-genre" class="info-boxes">
+            <small id="name-anime">gênero(s)</small><br>
+            <span id="genre-anime"></span>
+        </div>
+        <div id="anime-sinopse" class="info-boxes">
+            <small id="name-anime">sinopse</small><br>
+            <span id="sinopse-anime"></span>
+        </div>
+    </div>
+  </main>
+  <footer class="bg-light text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+  
+        <!-- Twitter -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="bi bi-twitter"></i></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          ><i class="bi bi-instagram"></i></a>
+        
+        <!-- YouTube -->
+        <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #FF0000;"
+            href="#!"
+            role="button"
+            ><i class="bi bi-youtube"></i></a>
+  
+        <!-- TikTok -->
+        <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #000000;"
+            href="#!"
+            role="button"
+            ><i class="bi bi-tiktok"></i>
+        </a>
+        
+        <!-- Github -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #333333;"
+          href="#!"
+          role="button"
+          ><i class="bi bi-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">PcoketScript</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
